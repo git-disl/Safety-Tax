@@ -13,7 +13,7 @@
 
 
 
-# Aligned LRM production pipeline 
+## Aligned LRM production pipeline 
 A two-stage sequential pipelin is considered. 
 1. **Reasoning training.**. At this stage, we  supervised fine-tune(SFT) the model on reasoning dataset (e.g., s1k) to produce the Large Reasoning Model (LRM).
 2. **Safety alignment**. At this stage, we SFT the model on safety dataset (e.g., SafeChain, DirectRefusal) to safety aligned the LRM. 
@@ -25,7 +25,7 @@ A two-stage sequential pipelin is considered.
 
 
 
-# Safety Tax
+## Safety Tax
 
 We identify an important tradeoff at the safety alignment stage. Pariticularly, Safety alignment can restore the safety of the LRM (smaller harmful score). However, this come with a cost of degrading the model reasoning ability (smaller reasoing accuracy). You can't get a safety aligned model and good reasoning model at the same time! The phenomenon is named **Safety Tax**. 
 
@@ -33,7 +33,7 @@ We identify an important tradeoff at the safety alignment stage. Pariticularly, 
   <img src="thumb.png" width="70%"/>
 </div>
 
-# Preparation
+## Preparation
 
 1. Install the required packages. 
 ```
@@ -91,10 +91,10 @@ sbatch sft.sh TianshengHuang/s1k 4
 ```
 
 
-# Acknowledgment
+## Acknowledgment
 The repo is built upon the code base from  [simplescaling
 s1](https://github.com/simplescaling/s1). Special thanks to simplesacling team! 
 
-# Citation
+## Citation
 
 To be released!
