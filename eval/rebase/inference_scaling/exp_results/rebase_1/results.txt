@@ -1,0 +1,5 @@
+
+agg_function majority_vote weighted: True 
+ accuracy: 0.264
+agg_function majority_vote weighted: True 
+ accuracy: 0.264

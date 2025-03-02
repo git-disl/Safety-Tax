@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sglang"
+version = "0.1.14"
+description = "A structured generation langauge for LLMs." 
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "requests",
+]
+
+[project.optional-dependencies]
+srt = ["aiohttp", "fastapi", "psutil", "rpyc", "torch", "uvloop", "uvicorn",
+       "zmq", "vllm==0.3.3", "interegular", "lark", "numba",
+       "pydantic", "referencing", "diskcache", "cloudpickle", "pillow", "outlines>=0.0.27"]
+openai = ["openai>=1.0", "numpy"]
+anthropic = ["anthropic>=0.20.0", "numpy"]
+other = ["timeout-decorator", "pebble"]
+all = ["sglang[srt]", "sglang[openai]", "sglang[anthropic]", "sglang[other]"]
+
+[project.urls]
+"Homepage" = "https://github.com/sgl-project/sglang"
+"Bug Tracker" = "https://github.com/sgl-project/sglang/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["assets*", "benchmark*", "docs*", "dist*", "playground*", "scripts*", "tests*"]
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "docs*", "dist*", "playground*", "scripts*", "tests*"]

@@ -1,0 +1,44 @@
+Metadata-Version: 2.2
+Name: sglang
+Version: 0.1.14
+Summary: A structured generation langauge for LLMs.
+Project-URL: Homepage, https://github.com/sgl-project/sglang
+Project-URL: Bug Tracker, https://github.com/sgl-project/sglang/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Provides-Extra: srt
+Requires-Dist: aiohttp; extra == "srt"
+Requires-Dist: fastapi; extra == "srt"
+Requires-Dist: psutil; extra == "srt"
+Requires-Dist: rpyc; extra == "srt"
+Requires-Dist: torch; extra == "srt"
+Requires-Dist: uvloop; extra == "srt"
+Requires-Dist: uvicorn; extra == "srt"
+Requires-Dist: zmq; extra == "srt"
+Requires-Dist: vllm==0.3.3; extra == "srt"
+Requires-Dist: interegular; extra == "srt"
+Requires-Dist: lark; extra == "srt"
+Requires-Dist: numba; extra == "srt"
+Requires-Dist: pydantic; extra == "srt"
+Requires-Dist: referencing; extra == "srt"
+Requires-Dist: diskcache; extra == "srt"
+Requires-Dist: cloudpickle; extra == "srt"
+Requires-Dist: pillow; extra == "srt"
+Requires-Dist: outlines>=0.0.27; extra == "srt"
+Provides-Extra: openai
+Requires-Dist: openai>=1.0; extra == "openai"
+Requires-Dist: numpy; extra == "openai"
+Provides-Extra: anthropic
+Requires-Dist: anthropic>=0.20.0; extra == "anthropic"
+Requires-Dist: numpy; extra == "anthropic"
+Provides-Extra: other
+Requires-Dist: timeout-decorator; extra == "other"
+Requires-Dist: pebble; extra == "other"
+Provides-Extra: all
+Requires-Dist: sglang[srt]; extra == "all"
+Requires-Dist: sglang[openai]; extra == "all"
+Requires-Dist: sglang[anthropic]; extra == "all"
+Requires-Dist: sglang[other]; extra == "all"
