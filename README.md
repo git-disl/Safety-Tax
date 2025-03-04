@@ -96,7 +96,7 @@ The repo is built upon the code base from  [simplescaling
 s1](https://github.com/simplescaling/s1). Special thanks to simplesacling team! 
 
 ## Citation
-
+```
 @misc{huang2025safetytax,
       title={Safety Tax: Safety Alignment Makes Your Large Reasoning Models Less Reasonable}, 
       author={Tiansheng Huang and Sihao Hu and Fatih Ilhan and Selim Furkan Tekin and Zachary Yahn and Yichang Xu and Ling Liu},
@@ -106,3 +106,4 @@ s1](https://github.com/simplescaling/s1). Special thanks to simplesacling team!
       primaryClass={cs.CR},
       url={https://arxiv.org/abs/2503.00555}, 
 }
+```
