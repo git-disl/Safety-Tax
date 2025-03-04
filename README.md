@@ -9,7 +9,7 @@
 ![Forks](https://img.shields.io/github/forks/git-disl/Safety-Tax)
 </div>
 
-[[`📕 Paper`]()] [[`🤗 DirectRefusal`](https://huggingface.co/datasets/TianshengHuang/DirectRefusal)] [[`🤗 SafeChain Aligned model`](https://huggingface.co/TianshengHuang/s1_sft_cot)]  [[`🤗 DirectRefusal Aligned model`](https://huggingface.co/TianshengHuang/s1_sft_sft)]
+[[`📕 Paper`](https://arxiv.org/abs/2503.00555)] [[`🤗 DirectRefusal`](https://huggingface.co/datasets/TianshengHuang/DirectRefusal)] [[`🤗 SafeChain Aligned model`](https://huggingface.co/TianshengHuang/s1_sft_cot)]  [[`🤗 DirectRefusal Aligned model`](https://huggingface.co/TianshengHuang/s1_sft_sft)]
 
 
 
@@ -97,4 +97,12 @@ s1](https://github.com/simplescaling/s1). Special thanks to simplesacling team!
 
 ## Citation
 
-To be released!
+@misc{huang2025safetytax,
+      title={Safety Tax: Safety Alignment Makes Your Large Reasoning Models Less Reasonable}, 
+      author={Tiansheng Huang and Sihao Hu and Fatih Ilhan and Selim Furkan Tekin and Zachary Yahn and Yichang Xu and Ling Liu},
+      year={2025},
+      eprint={2503.00555},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2503.00555}, 
+}
