@@ -1,6 +1,5 @@
 
 <h1 align="center">	Safety Tax: Safety Alignment Makes Your Large Reasoning Models  Less Reasonable</h1>
-
 <div align="center">
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-green)
